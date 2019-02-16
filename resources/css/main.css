@@ -32,26 +32,91 @@
     --font-size-sub-title: 24px;
     --font-size-heading-small: 16px;
    
-    --area-wide: 1200px;
+    --area-wide: 800px;
     --area-narrow: 800px;
+
+    --font-heading: Georgia, Serif;
+
   }
 
 /* ----------------- global defaults */
+* {
+    box-sizing: border-box;
+
+}
+body {
+        color: var(--main-text-color);
+        font-size: 18px;
+        line-height: 1.8;
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+
+video {
+    max-width: 100%;
+}
+
+img {
+        max-width: 100%;
+}
 
 /* ----------------- headings and type */
 
 /* ----------------- layout */
+.layout-wide {
+    max-width: var(--area-wide);
+    padding-left: var(--padder);
+    padding-right: var(--padder);
+
+    margin-bottom: var(--spacer-large);
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.layout-fullwidth {
+    margin-bottom: var(--spacer-large);
+
+}
+
 
 /* ----------------- header */
 
-
 header {
-    background-color: var(--color-green);
+    background-color: var(--alternative-bg-color);
+    padding-top: var(--spacer);
+
+
+}
+
+.logo-wrapper {
+    width: 20%;
+    float: left;
+
+}
+
+.site-title {
+        width: 80%;
+        float: right;
+        color: var(--alternative-text-color);
+        font-family: var(--font-heading);
+        font-size: var(--font-size-site-title);
+        text-align: right;
+
+
+}
+
+header .layout-wide {
+    overflow: hidden;
 }
 
 /* ----------------- navigation */
 
 /* ----------------- footer */
+footer {
+    background-color: var(--alternative-bg-color);
+}
 
 /* ----------------- moduls */
 
