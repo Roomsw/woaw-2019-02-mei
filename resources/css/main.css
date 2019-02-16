@@ -146,9 +146,11 @@ label {
     font-family: var(--font-heading);
     color: var(--alternative-text-color);
     padding: var(--spacer);
-    min-width: 220px;
+    min-width: 200px;
     margin-top: var(--spacer);
     text-transform: uppercase;
+    border: none;
+
 }
 
 /* ----------------- moduls */
