@@ -100,7 +100,7 @@ h4 {
 a {
     color: var(--link-color);
     transition: var(--transition-time);
-    
+
 }
 
 a:hover {
@@ -167,7 +167,7 @@ header .layout-wide {
     padding-top: var(--padder);
     padding-bottom: var(--padder);
     background-color: var(--alternative-bg-color);
-    color: var (--alternative-text-color);
+    color: var(--alternative-text-color);
 
     border: none;
     border-top: 1px solid black;
@@ -193,6 +193,10 @@ header .layout-wide {
 
 }
 
+.nav-inner {
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 800px){
     .nav-prompt {
         display: none;
@@ -208,9 +212,7 @@ header .layout-wide {
         justify-content: space-between;
 
     }
-    .nav-inner {
-        margin-bottom: 0;
-    }
+  
     .nav-inner a {
         border-bottom: 2px solid transparent;
     }
